@@ -1,0 +1,39 @@
+.csp-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+
+    .tile-container {
+        display: grid;
+        grid-template-columns: repeat(3, 10rem);
+        grid-template-rows: repeat(3, 10rem);
+
+        .tile-item {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #FFFFFF;
+
+            &.p-todo {
+                background: #FF7F50;
+                cursor: pointer;
+            }
+
+            &.p-remainder {
+                background: #40E0D0;
+                cursor: pointer;
+            }
+
+            &.p-pokeman {
+                background: #6495ED;
+                cursor: pointer;
+            }
+
+            &.brand-name {
+                background: #000080;
+                pointer-events: none;
+            }
+        }
+    }
+}
